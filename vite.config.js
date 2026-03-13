@@ -1,9 +1,8 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
-// https://vitejs.dev/config/
-export default defineConfig({
+// 配置 GitHub Pages 专用路径
+export default {
+  base: '/EatScape/',
   plugins: [vue()],
-  // 新增这一行！适配 GitHub Pages 路径
-  base: '/EatScape/'
-})
+}
